@@ -22,11 +22,11 @@ public class mailComposing {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"ysignin\"]/div")).click();
 		new WebDriverWait(driver, 10)
-				.until(ExpectedConditions.elementToBeClickable(By.id("login-username"))).sendKeys("mandalinaveen");
+				.until(ExpectedConditions.elementToBeClickable(By.id("login-username"))).sendKeys("username");
 		
 		driver.findElement(By.name("signin")).click();
 		new WebDriverWait(driver,10)
-		.until(ExpectedConditions.elementToBeClickable(By.id("login-passwd"))).sendKeys("avgmvn25");
+		.until(ExpectedConditions.elementToBeClickable(By.id("login-passwd"))).sendKeys("password");
 //		 
 		driver.findElement(By.id("login-signin")).click();
 		driver.findElement(By.xpath("//*[@class=\"icon mail\"]")).click();
