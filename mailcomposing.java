@@ -33,7 +33,7 @@ public class mailComposing {
 		
 		driver.findElement(By.xpath("//*[@data-test-id=\'compose-button\']")).click();
 		
-		driver.findElement(By.id("message-to-field")).sendKeys("chinnisanti@gmail.com");
+		driver.findElement(By.id("message-to-field")).sendKeys("send@gmail.com");
 		
 		driver.findElement(By.xpath("//*[@data-test-id='compose-subject']")).sendKeys("incubyte");
 //	 
